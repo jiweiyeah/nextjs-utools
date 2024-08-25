@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          padding: 20px;
+          background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          color: #00698f;
+        }
+        
+        h1 {
+          font-size: 36px;
+          margin-bottom: 10px;
+        }
+        
+        h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        
+        h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        
+        p {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        
+        a {
+          color: #337ab7;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: #23527c;
+        }
+        
+        code {
+          font-size: 12px;
+          background-color: #f7f7f7;
+          padding: 2px 4px;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+        }
+        
+        pre {
+          font-size: 12px;
+          background-color: #f7f7f7;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+        }
+        
+        hr {
+          border: none;
+          height: 1px;
+          background-color: #ccc;
+          margin: 20px 0;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        
+        th, td {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: left;
+        }
+        
+        th {
+          background-color: #f0f0f0;
+        }
+        
+        td {
+          background-color: #fff;
+        }
+        
+        th:first-child, td:first-child {
+          padding-left: 20px;
+        }
+        
+        th:last-child, td:last-child {
+          padding-right: 20px;
+        }
+        
+        table tr:hover {
+          background-color: #f9f9f9;
+        }
+        
+        table tr:nth-child(even) {
+          background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <p>title: 开始学习前说明
+        author: 耶和博
+        createTime: 2024/08/10 17:30:23</p>
+    <h2 id="permalink-nextjs14-">permalink: /nextjs14/</h2>
+    <h3 id="-"><strong>介绍</strong></h3>
+    <p>欢迎阅读 Next.js 文档！</p>
+    <hr>
+    <h3 id="-next-js-"><strong>什么是 Next.js？</strong></h3>
+    <p>Next.js 是一个用于构建全栈 Web 应用程序的 React 框架。你可以使用 React 组件来构建用户界面，并使用 Next.js 提供的附加功能和优化来增强应用程序。</p>
+    <p>在底层，Next.js 还抽象并自动配置了 React 所需的工具，例如打包、编译等。这样，你可以专注于构建应用程序，而不必花费时间进行配置。</p>
+    <p>无论你是个人开发者还是团队的一员，Next.js 都可以帮助你构建交互式、动态和快速的 React 应用程序。</p>
+    <hr>
+    <h3 id="-"><strong>主要功能</strong></h3>
+    <p>Next.js 的一些主要功能包括：</p>
+    <table>
+        <thead>
+            <tr>
+                <th>功能</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/routing">路由</a></td>
+                <td>基于文件系统的路由器，构建在 Server Components 之上，支持布局、嵌套路由、加载状态、错误处理等功能。</td>
+            </tr>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/rendering">渲染</a></td>
+                <td>支持客户端和服务器端渲染，结合客户端和服务器组件。通过静态和动态渲染进一步优化，在服务器端使用 Next.js 实现。支持在 Edge 和 Node.js 运行时上的流式渲染。</td>
+            </tr>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/data-fetching">数据获取</a></td>
+                <td>使用 Server Components 中的 async/await 简化数据获取，并扩展 <code>fetch</code> API 以进行请求缓存、数据缓存和重新验证。</td>
+            </tr>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/styling">样式</a></td>
+                <td>支持各种样式方法，包括 CSS Modules、Tailwind CSS 和 CSS-in-JS。</td>
+            </tr>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/optimizing">优化</a></td>
+                <td>提供图像、字体和脚本优化，以改善应用程序的核心 Web 体验和用户体验。</td>
+            </tr>
+            <tr>
+                <td><a href="https://nextjs.org/docs/app/building-your-application/configuring/typescript">TypeScript</a>
+                </td>
+                <td>提供对 TypeScript 的改进支持，包括更好的类型检查和更高效的编译，以及自定义 TypeScript 插件和类型检查器。</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3 id="-"><strong>如何使用这些文档</strong></h3>
+    <p>在屏幕左侧，你会看到文档导航栏。文档页面按顺序组织，从基础到高级，因此你可以在构建应用程序时按步骤阅读。然而，你也可以按任意顺序阅读，或跳过与您使用场景相关的页面。</p>
+    <p>在屏幕右侧，你会看到一个目录，使你更容易在页面各部分之间导航。如果你需要快速找到某个页面，可以使用顶部的搜索栏，或使用搜索快捷键（<code>Ctrl+K</code> 或 <code>Cmd+K</code>）。</p>
+    <p>要开始使用，请查看<a href="https://nextjs.org/docs/getting-started/installation">安装指南</a>。</p>
+    <hr>
+    <h3 id="-"><strong>应用路由与页面路由</strong></h3>
+    <p>Next.js 有两种不同的路由器：应用路由器和页面路由器。应用路由器是一个较新的路由器，允许你使用 React 的最新功能，例如 Server Components 和流式处理。页面路由器是原始的 Next.js
+        路由器，允许你构建服务器渲染的 React 应用程序，并继续支持较旧的 Next.js 应用程序。</p>
+    <p>在侧边栏顶部，你会看到一个下拉菜单，可以在 <strong>应用路由器</strong> 和 <strong>页面路由器</strong> 功能之间切换。由于每个目录都有其独特的功能，因此保持关注所选的标签非常重要。</p>
+    <p>页面顶部的面包屑导航也会指示你正在查看应用路由文档还是页面路由文档。</p>
+    <hr>
+    <h3 id="-"><strong>预备知识</strong></h3>
+    <p>尽管我们的文档旨在对初学者友好，但我们需要建立一个基础，以便文档能够专注于 Next.js 功能。每当引入新概念时，我们会确保提供相关文档的链接。</p>
+    <p>为了最大程度地利用我们的文档，建议你具备 HTML、CSS 和 React 的基本理解。如果你需要复习 React 技能，可以查看我们的 <a
+            href="https://nextjs.org/learn/react-foundations">React 基础课程</a>，该课程将向你介绍基础知识。然后，通过<a
+            href="https://nextjs.org/learn/dashboard-app">构建仪表板应用程序</a>进一步了解 Next.js。</p>
+    <hr>
+    <h3 id="-"><strong>可访问性</strong></h3>
+    <p>为了在使用屏幕阅读器阅读文档时获得最佳的可访问性，我们建议使用 Firefox 和 NVDA，或 Safari 和 VoiceOver。</p>
+    <hr>
+    <h3 id="-"><strong>加入我们的社区</strong></h3>
+    <p>如果你对 Next.js 的任何内容有疑问，欢迎随时在 <a href="https://github.com/vercel/next.js/discussions">GitHub 讨论区</a>、<a
+            href="https://discord.com/invite/bUG2bvbtHy">Discord</a>、<a href="https://x.com/nextjs">Twitter</a> 和 <a
+            href="https://www.reddit.com/r/nextjs">Reddit</a> 上向我们的社区提问。</p>
+</body>
+</html>
+
+

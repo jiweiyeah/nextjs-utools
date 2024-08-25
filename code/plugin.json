@@ -1,0 +1,17 @@
+{
+  "name": "nextjs中文文档",
+  "version": "1.0.0",
+  "pluginName": "nextjs中文文档",
+  "description": "nextjs中文文档",
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "demo-doc",
+      "explain": "nextjs中文文档",
+      "cmds": [
+        "nextjs"
+      ]
+    }
+  ]
+}
