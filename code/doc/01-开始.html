@@ -3,121 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>介绍</title>
     <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 20px;
-          padding: 20px;
-          background-color: #f9f9f9;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-          color: #00698f;
-        }
-        
-        h1 {
-          font-size: 36px;
-          margin-bottom: 10px;
-        }
-        
-        h2 {
-          font-size: 24px;
-          margin-bottom: 10px;
-        }
-        
-        h3 {
-          font-size: 18px;
-          margin-bottom: 10px;
-        }
-        
-        p {
-          font-size: 14px;
-          margin-bottom: 10px;
-        }
-        
-        a {
-          color: #337ab7;
-          text-decoration: none;
-        }
-        
-        a:hover {
-          color: #23527c;
-        }
-        
-        code {
-          font-size: 12px;
-          background-color: #f7f7f7;
-          padding: 2px 4px;
-          border: 1px solid #ddd;
-          border-radius: 3px;
-        }
-        
-        pre {
-          font-size: 12px;
-          background-color: #f7f7f7;
-          padding: 10px;
-          border: 1px solid #ddd;
-          border-radius: 3px;
-        }
-        
-        hr {
-          border: none;
-          height: 1px;
-          background-color: #ccc;
-          margin: 20px 0;
-        }
-        table {
-          border-collapse: collapse;
-          width: 100%;
-          margin-bottom: 20px;
-        }
-        
-        th, td {
-          border: 1px solid #ddd;
-          padding: 10px;
-          text-align: left;
-        }
-        
-        th {
-          background-color: #f0f0f0;
-        }
-        
-        td {
-          background-color: #fff;
-        }
-        
-        th:first-child, td:first-child {
-          padding-left: 20px;
-        }
-        
-        th:last-child, td:last-child {
-          padding-right: 20px;
-        }
-        
-        table tr:hover {
-          background-color: #f9f9f9;
-        }
-        
-        table tr:nth-child(even) {
-          background-color: #f7f7f7;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+          Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 2rem;
+      }
+  
+      h1,
+      h2,
+      h2 {
+        margin-top: 2rem;
+      }
+  
+      h1+h2 {
+        margin-top: 1rem;
+      }
+  
+      h1,
+      h2,
+      h2,
+      h4,
+      h5,
+      h6 {
+        color: #00698f;
+      }
+  
+      a {
+        color: #337ab7;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        color: #23527c;
+      }
+  
+      code {
+        background-color: #eee;
+        border-radius: 3px;
+        font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        padding: 0.2rem 0.4rem;
+      }
+  
+      pre {
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 1rem;
+        overflow-x: auto;
+      }
+  
+      .code-tabs {
+        margin-top: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+      }
+  
+      .code-tabs .tab-button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+  
+      .code-tabs .tab-button.active {
+        border-bottom: 2px solid #00698f;
+      }
+  
+      .code-tabs .tab-content {
+        padding: 1rem;
+        display: none;
+      }
+  
+      .code-tabs .tab-content.active {
+        display: block;
+      }
+  
+      .tip {
+        background-color: #f0f0f0;
+        border-left: 5px solid #00698f;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+  
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+        margin: 20px 0;
+      }
+  
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #f0f0f0;
+      }
+  
+      td {
+        background-color: #fff;
+      }
+  
+      th:first-child,
+      td:first-child {
+        padding-left: 20px;
+      }
+  
+      th:last-child,
+      td:last-child {
+        padding-right: 20px;
+      }
+  
+      table tr:hover {
+        background-color: #f9f9f9;
+      }
+  
+      table tr:nth-child(even) {
+        background-color: #f7f7f7;
+      }
     </style>
 </head>
 <body>
-    <p>title: 开始学习前说明
-        author: 耶和博
-        createTime: 2024/08/10 17:30:23</p>
-    <h2 id="permalink-nextjs14-">permalink: /nextjs14/</h2>
-    <h3 id="-"><strong>介绍</strong></h3>
+    <h1 id="-"><strong>介绍</strong></h1>
     <p>欢迎阅读 Next.js 文档！</p>
     <hr>
-    <h3 id="-next-js-"><strong>什么是 Next.js？</strong></h3>
+    <h2 id="-next-js-"><strong>什么是 Next.js？</strong></h2>
     <p>Next.js 是一个用于构建全栈 Web 应用程序的 React 框架。你可以使用 React 组件来构建用户界面，并使用 Next.js 提供的附加功能和优化来增强应用程序。</p>
     <p>在底层，Next.js 还抽象并自动配置了 React 所需的工具，例如打包、编译等。这样，你可以专注于构建应用程序，而不必花费时间进行配置。</p>
     <p>无论你是个人开发者还是团队的一员，Next.js 都可以帮助你构建交互式、动态和快速的 React 应用程序。</p>
     <hr>
-    <h3 id="-"><strong>主要功能</strong></h3>
+    <h2 id="-"><strong>主要功能</strong></h2>
     <p>Next.js 的一些主要功能包括：</p>
     <table>
         <thead>
@@ -155,30 +184,37 @@
         </tbody>
     </table>
     <hr>
-    <h3 id="-"><strong>如何使用这些文档</strong></h3>
+    <h2 id="-"><strong>如何使用这些文档</strong></h2>
     <p>在屏幕左侧，你会看到文档导航栏。文档页面按顺序组织，从基础到高级，因此你可以在构建应用程序时按步骤阅读。然而，你也可以按任意顺序阅读，或跳过与您使用场景相关的页面。</p>
     <p>在屏幕右侧，你会看到一个目录，使你更容易在页面各部分之间导航。如果你需要快速找到某个页面，可以使用顶部的搜索栏，或使用搜索快捷键（<code>Ctrl+K</code> 或 <code>Cmd+K</code>）。</p>
     <p>要开始使用，请查看<a href="https://nextjs.org/docs/getting-started/installation">安装指南</a>。</p>
     <hr>
-    <h3 id="-"><strong>应用路由与页面路由</strong></h3>
+    <h2 id="-"><strong>应用路由与页面路由</strong></h2>
     <p>Next.js 有两种不同的路由器：应用路由器和页面路由器。应用路由器是一个较新的路由器，允许你使用 React 的最新功能，例如 Server Components 和流式处理。页面路由器是原始的 Next.js
         路由器，允许你构建服务器渲染的 React 应用程序，并继续支持较旧的 Next.js 应用程序。</p>
     <p>在侧边栏顶部，你会看到一个下拉菜单，可以在 <strong>应用路由器</strong> 和 <strong>页面路由器</strong> 功能之间切换。由于每个目录都有其独特的功能，因此保持关注所选的标签非常重要。</p>
     <p>页面顶部的面包屑导航也会指示你正在查看应用路由文档还是页面路由文档。</p>
     <hr>
-    <h3 id="-"><strong>预备知识</strong></h3>
+    <h2 id="-"><strong>预备知识</strong></h2>
     <p>尽管我们的文档旨在对初学者友好，但我们需要建立一个基础，以便文档能够专注于 Next.js 功能。每当引入新概念时，我们会确保提供相关文档的链接。</p>
     <p>为了最大程度地利用我们的文档，建议你具备 HTML、CSS 和 React 的基本理解。如果你需要复习 React 技能，可以查看我们的 <a
             href="https://nextjs.org/learn/react-foundations">React 基础课程</a>，该课程将向你介绍基础知识。然后，通过<a
             href="https://nextjs.org/learn/dashboard-app">构建仪表板应用程序</a>进一步了解 Next.js。</p>
     <hr>
-    <h3 id="-"><strong>可访问性</strong></h3>
+    <h2 id="-"><strong>可访问性</strong></h2>
     <p>为了在使用屏幕阅读器阅读文档时获得最佳的可访问性，我们建议使用 Firefox 和 NVDA，或 Safari 和 VoiceOver。</p>
     <hr>
-    <h3 id="-"><strong>加入我们的社区</strong></h3>
+    <h2 id="-"><strong>加入我们的社区</strong></h2>
     <p>如果你对 Next.js 的任何内容有疑问，欢迎随时在 <a href="https://github.com/vercel/next.js/discussions">GitHub 讨论区</a>、<a
             href="https://discord.com/invite/bUG2bvbtHy">Discord</a>、<a href="https://x.com/nextjs">Twitter</a> 和 <a
             href="https://www.reddit.com/r/nextjs">Reddit</a> 上向我们的社区提问。</p>
+            
+    <hr>
+    <strong>本手册由<a href="https://nextjs.freeourdays.com">Next.js中文文档</a>提供支持！</strong>
+    <strong>加入nextjs交流群请扫码，如果能给耶和博打赏就再好不过了！</strong>
+    <p></p>
+    <img src="../yeheboo.png" width="100%" height="100%" alt="耶和博">
+    <img src="../zs.png" width="100%" height="100%" alt="耶和博">
 </body>
 </html>
 
